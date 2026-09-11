@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Control Console</title>
+  <style>
+    /* 簡易極簡 UI 樣式 */
+    body {
+      width: 280px;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      background-color: #f9fafb;
+      color: #1f2937;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 8px;
+    }
+
+    .title {
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .status-badge {
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 9999px;
+      background-color: #d1fae5;
+      color: #065f46;
+      font-weight: 500;
+    }
+
+    .content {
+      margin-bottom: 16px;
+    }
+
+    .description {
+      font-size: 12px;
+      color: #4b5563;
+      margin-bottom: 12px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 8px 12px;
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #1d4ed8;
+    }
+
+    .footer {
+      font-size: 10px;
+      color: #9ca3af;
+      text-align: center;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1 class="title">防錯輔助控制台</h1>
+    <span class="status-badge" id="status">已連線</span>
+  </div>
+
+  <div class="content">
+    <p class="description">點擊下方按鈕，對目前頁面進行即時資料對帳與 DOM 校驗：</p>
+    <button class="btn" id="check-btn">執行頁面防錯檢查</button>
+  </div>
+
+  <div class="footer">
+    v1.0.0 • Data Engineering Assistant
+  </div>
+
+  <!-- 注意：Manifest V3 規定不能在 HTML 內寫 inline JavaScript (如 onclick="") -->
+  <!-- 所有邏輯必須寫在獨立的 js 檔案並在此引用 -->
+  <script src="popup.js"></script>
+</body>
+</html>

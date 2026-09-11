@@ -1,0 +1,12 @@
+{
+  "name": "dom-safety-extension-dev",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "chokidar": "^4.0.3",
+    "ws": "^8.18.0"
+  }
+}
