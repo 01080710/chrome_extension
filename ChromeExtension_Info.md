@@ -113,22 +113,22 @@
 ```text
 Chrome Extension Eabled Tools 
 │
-├── 1. JavaScript Built-in (原生 JS 基礎能力)
-│    ├─ Object         → 處理 JSON 或鍵值對（如 Object.keys()）
-│    ├─ Array          → 處理元素清單（如 map, filter, forEach）
-│    ├─ Promise        → 處理非同步操作（如 async / await）
-│    ├─ Map / Set      → 管理狀態映射與不重複節點紀錄
-│    ├─ JSON           → 資料轉字串與解析
-│    └─ Date           → 計算時間戳記與執行時間
+├── 1. JavaScript Built-In (原生 JS 基礎能力)
+│    ├─ Object           → 處理 JSON 或鍵值對（如 Object.keys()）
+│    ├─ Array            → 處理元素清單（如 map, filter, forEach）
+│    ├─ Promise          → 處理非同步操作（如 async / await）
+│    ├─ Map / Set        → 管理狀態映射與不重複節點紀錄
+│    ├─ JSON             → 資料轉字串與解析
+│    └─ Date             → 計算時間戳記與執行時間
 │
 ├── 2. Web APIs (瀏覽器賦予的網頁操作能力)
-│    ├─ document       → 核心：搜尋、建立與修改 HTML DOM 元素
-│    ├─ window         → 視窗控制：取得畫面寬高、監聽視窗 resize
-│    ├─ location       → 網址解析：取得當前網域 (hostname) 與路徑 (pathname)
-│    ├─ fetch          → 網路請求：發送 API 呼叫取得外部資料
+│    ├─ document         → 核心：搜尋、建立與修改 HTML DOM 元素
+│    ├─ window           → 視窗控制：取得畫面寬高、監聽視窗 resize
+│    ├─ location         → 網址解析：取得當前網域 (hostname) 與路徑 (pathname)
+│    ├─ fetch            → 網路請求：發送 API 呼叫取得外部資料
 │    ├─ MutationObserver → 動態監控：監聽網頁元素的新增或刪除
-│    ├─ URL            → 網址處理：解析 Query 參數
-│    └─ navigator      → 系統資訊：讀取剪貼簿 (Clipboard) 或語言設定
+│    ├─ URL              → 網址處理：解析 Query 參數
+│    └─ navigator        → 系統資訊：讀取剪貼簿 (Clipboard) 或語言設定
 │
 └── 3. Chrome APIs (Extension 獨有的特權能力)
      ├─ chrome.runtime   → 通訊管道：跨檔案傳送/接收 Message
