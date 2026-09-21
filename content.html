@@ -1,0 +1,39 @@
+<div class="box">
+
+  <!-- Header -->
+  <div class="header">
+    <div>
+      <div class="title">Market Monitor</div>
+      <div class="subtitle">Binance WebSocket Stream</div>
+    </div>
+
+    <div id="status" class="status offline">
+      ● OFFLINE
+    </div>
+  </div>
+
+  <!-- Control -->
+  <button id="toggle-btn" class="btn">
+    Start Monitoring
+  </button>
+
+  <!-- Market Table -->
+  <div class="market-panel">
+    <div class="table-header">
+      <div>SYMBOL</div>
+      <div>PRICE</div>
+      <div>QUANTITY</div>
+      <div>TRADETIME</div>
+      <div>EVENTTIME</div>
+    </div>
+    <div id="symbol-list">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <span>STREAM</span>
+    <!-- <span id="stream-count">0 symbols</span> -->
+  </div>
+
+</div>
